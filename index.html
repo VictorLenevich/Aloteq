@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="bootstrap-grid.css" />
+    <link rel="stylesheet" href="fonts-style.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>ALOTEQ</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <img
+          class="cloud parallax-icon"
+          data-speed="-7"
+          src="image/cloud-icon.svg"
+          alt="cloud-icon"
+        />
+        <div class="row justify-content-between align-content-center">
+          <img src="image/logo.svg" alt="Logo" class="header-logo col-auto" />
+          <button class="header-button-contact col-auto">Contact us</button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <article>
+        <section class="info-section">
+          <div class="container">
+            <div class="row col-12">
+              <h2 class="headline-info-section">
+                Software Development & Consulting
+              </h2>
+              <p class="description-info-section">
+                Team baked to succeed. Our team utilize the latest technologies,
+                frameworks, and components to create solutions that combine a
+                strong technical back-end with easy to use modern design
+              </p>
+              <div class="links-info-section">
+                <a href="https://dribbble.com/aloteq" target="_blank">
+                  See our portfolio on Dribble
+                  <img src="image/link-ball.svg" alt="link-icon" />
+                </a>
+                <a href="presentation/fivehero.pdf" target="_blank" download>
+                  Learn more about team
+                  <img src="image/link-pdf.svg" alt="link-icon" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <img class="barrel" src="image/barrel-icon.svg" alt="barrel-icon" />
+          <img
+            class="settings parallax-icon"
+            data-speed="3"
+            src="image/settings-icon.svg"
+            alt="settings-icon"
+          />
+          <div class="background">
+            <video autoplay muted loop id="myVideo">
+              <source src="image/anima.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </section>
+        <section class="team-section">
+          <div class="container">
+            <div class="row">
+              <h2 class="headline-team-section">Our Team</h2>
+              <div class="about-us row">
+                <p class="description-team-section col-sm-8 col-12">
+                  Team baked to succeed. Our team utilize the latest
+                  technologies, frameworks, and components to create solutions
+                  that combine a strong technical back-end with easy to use
+                  modern design Team baked to succeed. Our team utilize the
+                  latest technologies, frameworks, and components to create
+                  solutions that combine a strong technical back-end with easy
+                  to use modern design
+                </p>
+                <a
+                  href="presentation/fivehero.pdf"
+                  target="_blank"
+                  download
+                  class="link-pdf pt-4 pt-sm-0 col-sm-3 col-12"
+                  ><img src="image/link-pdf.svg" alt="link-pdf" />
+                  <p>More about us</p></a
+                >
+              </div>
+              <img
+                class="team-photo"
+                srcset="image/team-photo@2x.jpg 2x"
+                src="image/team-photo.jpg"
+                alt="team-photo"
+              />
+            </div>
+          </div>
+        </section>
+      </article>
+      <footer>
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="contact-content col-12 col-md-3">
+              <h3 class="contact-name">Email</h3>
+              <p>
+                <span class="contact">contact@aloteq.com</span>
+              </p>
+            </div>
+            <div class="contact-content col-12 col-md-6">
+              <h3 class="contact-name">Addresses</h3>
+              <p>
+                <span class="contact"
+                  >220007, Belarus, Minsk, ul. Lozhinskaya 14/27</span
+                >
+                <span class="contact"
+                  >32-700, Poland, Bochnia, ul. Wolnica 2/4</span
+                >
+              </p>
+            </div>
+          </div>
+          <div class="row justify-content-between mt-md-auto mt-5">
+            <div class="contact-content col-12 col-md-4">
+              <h3 class="contact-name">Phones</h3>
+              <p>
+                <span class="contact">+375 (29) 565-44-43</span>
+                <span class="contact">+48 (789) 392-482</span>
+              </p>
+            </div>
+            <div class="contact-content col-12 col-md-6">
+              <h3 class="contact-name contact-other">Other</h3>
+              <div class="contact-social">
+                <a
+                  href="https://dribbble.com/aloteq"
+                  target="_blank"
+                  class="contact"
+                  ><img
+                    src="image/dibbble-icon.svg"
+                    alt="dribbble-icon"
+                  />Dribble</a
+                >
+                <a
+                  href="https://www.linkedin.com/company/aloteq"
+                  target="_blank"
+                  class="contact"
+                  ><img
+                    src="image/linkedin-icon.svg"
+                    alt="linkedIn-icon"
+                  />LinkedIn</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script>
+      document.addEventListener("mousemove", parallax);
+      function parallax(e) {
+        this.querySelectorAll(".parallax-icon").forEach((parallax_icon) => {
+          const speed = parallax_icon.getAttribute("data-speed");
+
+          const x = (window.innerWidth - e.pageX * speed) / 100;
+          const y = (window.innerHeight - e.pageY * speed) / 100;
+
+          parallax_icon.style.transform = `translateX(${x}px) translateY(${y}px)`;
+        });
+      }
+    </script>
+  </body>
+</html>

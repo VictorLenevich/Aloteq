@@ -1,0 +1,244 @@
+body header {
+  margin: 60px auto 153px auto;
+  max-width: 1140px;
+  position: relative;
+}
+body header .container .header-logo {
+  padding: 0;
+}
+body header .container .header-button-contact {
+  width: 210px;
+  height: 60px;
+  background: #0052f2;
+  border-radius: 10px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+}
+body header .cloud {
+  position: absolute;
+  top: 84px;
+  right: 579px;
+}
+@media (max-width: 1340px) {
+  body header .cloud {
+    position: absolute;
+    left: 5vw;
+    bottom: 0px;
+  }
+}
+body article {
+  margin: 0 auto;
+  max-width: 1140px;
+}
+body article .info-section {
+  position: relative;
+}
+body article .info-section .container .headline-info-section {
+  max-width: 653px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 72px;
+  line-height: 80px;
+  color: #222222;
+}
+@media (max-width: 500px) {
+  body article .info-section .container .headline-info-section {
+    font-size: 60px;
+  }
+}
+body article .info-section .container .description-info-section {
+  margin-top: 20px;
+  max-width: 653px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+}
+body article .info-section .container .links-info-section {
+  margin-top: 47px;
+  width: 100%;
+}
+body article .info-section .container .links-info-section a {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  color: #0052f2;
+}
+body article .info-section .container .links-info-section a:first-child {
+  margin-bottom: 16px;
+}
+body article .info-section .container .links-info-section a img {
+  margin-left: 14px;
+}
+body article .info-section .settings {
+  position: absolute;
+  right: -100px;
+  bottom: 10px;
+  z-index: 5;
+  object-fit: cover;
+}
+body article .info-section .background {
+  width: 1000px;
+  height: 1000px;
+  position: absolute;
+  top: -270px;
+  right: -142px;
+  z-index: -1;
+  background-size: cover;
+}
+body article .info-section .barrel {
+  position: absolute;
+  top: -68px;
+  right: -71px;
+}
+@media (max-width: 1439px) {
+  body article .info-section .background {
+    top: 0;
+    right: 0;
+    opacity: 0.5;
+  }
+}
+@media (max-width: 1340px) {
+  body article .info-section .settings {
+    position: absolute;
+    right: 0px;
+    bottom: 10px;
+  }
+  body article .info-section .barrel {
+    right: 150px;
+  }
+}
+@media (max-width: 970px) {
+  body article .info-section .background {
+    display: none;
+  }
+  body article .info-section .settings {
+    z-index: -1;
+  }
+  body article .info-section .barrel {
+    z-index: -1;
+  }
+}
+@media (max-width: 500px) {
+  body article .info-section .settings {
+    display: none;
+  }
+  body article .info-section .barrel {
+    display: none;
+  }
+}
+body article .team-section {
+  margin-top: 370px;
+}
+body article .team-section .container .headline-team-section {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 62px;
+  line-height: 62px;
+  color: #222222;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  body article .team-section .container .headline-team-section {
+    font-size: 60px;
+  }
+}
+body article .team-section .container .about-us {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+body article .team-section .container .about-us .description-team-section {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+  color: #444444;
+  max-width: 735px;
+}
+body article .team-section .container .about-us .link-pdf {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  color: #0052f2;
+}
+body article .team-section .container .about-us .link-pdf p {
+  margin-top: 13px;
+}
+body article .team-section .container .team-photo {
+  width: 100%;
+  align-items: center;
+  margin-top: 128px;
+}
+body footer {
+  background: #f8f8f8;
+  margin: 0 auto 0 auto;
+  padding: 160px 0 173px 0;
+}
+body footer .container {
+  padding: 0 8vw;
+}
+body footer .container .row .contact-content {
+  margin-bottom: 40px;
+}
+body footer .container .row .contact-content:last-child {
+  margin-bottom: 0;
+}
+
+body footer .container .row .contact-content .contact-name {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #b7b7b7;
+  margin-bottom: 20px;
+}
+
+body footer .container .row .contact-content .contact-other {
+  padding-top: 40px;
+}
+
+body footer .container .row .contact-content .contact-social {
+  max-width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+body footer .container .row .contact-content .contact {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #222222;
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+body footer .container .row .contact-content .contact img {
+  margin-right: 10px;
+}
